@@ -12,3 +12,4 @@ class PurchaseOrder(models.Model):
 	#purchase_ref= fields.Char( string='partner ref')
 
 	# test_id=fields
+#testing
