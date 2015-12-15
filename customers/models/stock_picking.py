@@ -25,6 +25,7 @@ class StockMove(models.Model):
 '''	
 
 	
+# testing purpose
  
 
 
