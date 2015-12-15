@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+<data>
+<template id="report_stock_picking_customer" inherit_id="stock.report_delivery_document" >
+<!-- <xpath expr="//div[@name='partner_header']" position="after"> -->
+<xpath expr="//h2" position="before">
+	<div class="row">
+<div class="col-xs-2" t-if="o.customer_id">
+<span><strong>Customer ID</strong></span>	
+<p t-field="o.customer_id"/>
+</div>
+<div class="col-xs-4" t-if="o.client_order_ref">
+	<span><strong>Purchase Order</strong></span>
+<p t-field="o.client_order_ref"/>
+</div>
+<div class="col-xs-3" t-if="o.group_id">
+	<span><strong>Source Document</strong></span>
+<p t-field="o.group_id"/>
+</div>
+
+<!-- <div class="col-xs-3" t-if="o.incoterm.name">
+	<span><strong>Freight Terms</strong></span>
+<p t-field="o.incoterm.name"/>
+</div> -->
+</div>
+
+</xpath>
+</template>
+</data>
+</odoo>
