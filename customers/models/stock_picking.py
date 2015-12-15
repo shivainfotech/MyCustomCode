@@ -24,9 +24,7 @@ class StockMove(models.Model):
         return res
 '''	
 
-	
-# testing purpose
- 
+
 
 
 	 
